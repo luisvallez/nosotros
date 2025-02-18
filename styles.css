@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monomakh&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", serif;
+    color: white;
+    border: none;
+}
+
+body{
+    justify-content: center;
+    text-align: center;
+    background-color: #222;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 200px;
+    gap: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .grid-item {
+    background-color: #f0f0f0;
+    overflow: hidden;
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .item {
+    grid-column: span 1;
+    border-radius: 8px;
+    scale: 1;
+    transition:.25s;
+  }
+
+  .item:hover{
+    scale: 1.025;
+  }
+
+  .item2 {
+    grid-column: span 2;
+    border-radius: 8px;
+    scale: 1;
+    transition:.25s;
+  }
+
+  .item2:hover{
+    scale: 1.025;
+  }
